@@ -4,7 +4,7 @@ import { secret } from "../../config";
 
 export class Clear {
   public constructor(app: Application) {
-    app.get("/clear", async (req, res) => {
+    app.get("/v1/clear", async (req, res) => {
       if (
         !req.headers ||
         !req.headers.authorization ||

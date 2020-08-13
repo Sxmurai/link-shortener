@@ -3,7 +3,7 @@ import { Links } from "../../models";
 
 export class Info {
   public constructor(app: Application) {
-    app.get("/urls", async (req, res) => {
+    app.get("/v1/urls", async (req, res) => {
       const data: any = await Links.find();
 
       return res.send({

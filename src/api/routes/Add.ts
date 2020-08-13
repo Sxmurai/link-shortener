@@ -5,7 +5,7 @@ import { URL } from "url";
 
 export class Add {
   public constructor(app: Application) {
-    app.get("/add/", async (req, res) => {
+    app.get("/v1/add/", async (req, res) => {
       if (!req.body || !req.body.link)
         return res
           .send({
