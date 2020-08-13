@@ -44,12 +44,16 @@ export class Add {
   }
 
   private id() {
-    const str = (
-      Date.now().toString(16) +
-      Math.random().toString(16).slice(2) +
-      Math.random().toString(16).slice(2) +
-      Math.random().toString(16).slice(2)
-    ).slice(0, 32);
-    return str.slice(0, 8) + "" + str.slice(8, 12);
+    const random =
+      "SxmuraiLinkShortenerAndShit0123456789ABCDEFGHNRVSDJpANfgctiUvzKqYTJkLxpZXIjHS0lRqWOshSjSpAhgSInSDU";
+
+    let id = "",
+      i = 7;
+
+    while (i--) {
+      id += random[(Math.random() * 64) | 0];
+    }
+
+    return id;
   }
 }

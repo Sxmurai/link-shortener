@@ -8,7 +8,7 @@
   "scripts": {
     "rebuild": "rm -r build && tsc && clear",
     "build": "tsc && clear && node .",
-    "commit": "git add . && git commit -m \"$1\" && git push && clear && echo \"Finished mate\""
+    "commit": "read commit; git add . && git commit -m \"$commit\" && git push && clear && echo \"Finished mate\""
   },
   "dependencies": {
     "@melike2d/logger": "^1.0.4",
