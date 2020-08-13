@@ -1,2 +1,2 @@
 # link-shortener
-My attempt to make a glitch link shortner, because I can.
+My attempt to make a link shortner, because I can.
