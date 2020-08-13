@@ -13,8 +13,7 @@
   "dependencies": {
     "@melike2d/logger": "^1.0.4",
     "express": "^4.17.1",
-    "mongoose": "^5.9.28",
-    "node-fetch": "^2.6.0"
+    "mongoose": "^5.9.28"
   },
   "devDependencies": {
     "@types/express": "^4.17.7",

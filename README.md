@@ -1,2 +1,10 @@
-# link-shortener
-My attempt to make a glitch link shortner, because I can.
+# Link Shortener
+
+My attempt to make a link shortner, because I can.
+
+---
+
+I used:
+
+- MongoDB
+- Express
