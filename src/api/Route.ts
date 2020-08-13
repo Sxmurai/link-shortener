@@ -1,4 +1,4 @@
-import { Add, Redirects } from "./routes";
+import { Add, Redirects, Info } from "./routes";
 import express from "express";
 
 export class Route {
@@ -8,6 +8,7 @@ export class Route {
     app.use(express.json());
 
     new Add(app);
+    new Info(app);
     new Redirects(app);
 
     app.listen(port);
