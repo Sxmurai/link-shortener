@@ -1,0 +1,10 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES2019",
+    "esModuleInterop": true,
+    "pretty": true,
+    "outDir": "build"
+  }
+}

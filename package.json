@@ -1,0 +1,25 @@
+{
+  "name": "link-shortener",
+  "version": "1.0.0",
+  "main": "./build/index.js",
+  "repository": "https://github.com/Sxmurai/link-shortener",
+  "author": "Sxmurai",
+  "license": "MIT",
+  "scripts": {
+    "rebuild": "rm -r build && tsc && clear",
+    "build": "tsc && clear && node .",
+    "commit": "git add . && git commit -m \"$1\" && git push && clear && echo \"Finished mate\""
+  },
+  "dependencies": {
+    "@melike2d/logger": "^1.0.4",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.28",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.7",
+    "@types/mongoose": "^5.7.36",
+    "@types/node": "^14.0.27",
+    "@types/node-fetch": "^2.5.7"
+  }
+}
