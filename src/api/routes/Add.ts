@@ -26,8 +26,13 @@ export class Add {
           })
           .status(404);
 
+      const names = (await Links.find({})).map((data) => data.id);
+
+      if (req.body.name && names.includes(req.body.name.toLowerCase()))
+        req.body.name = undefined;
+
       const data = await Links.create({
-        id: this.id(),
+        id: req.body.name ?? this.id(),
         redirectURL: req.body.link,
         date: Date.now(),
       });
