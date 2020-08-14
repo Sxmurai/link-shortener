@@ -1,6 +1,8 @@
 # Link Shortener
 
-My attempt to make a link shortner, because I can.
+A free and open source link shortener you can use!
+
+At the moment, I do not have a domain linked to this, but when I do it will be attached to the offical repository.
 
 ---
 
