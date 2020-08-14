@@ -8,7 +8,9 @@ At the moment, I do not have a domain linked to this, but when I do it will be a
 
 ## Endpoints
 
-`POST /add/`
+`POST /v1/add/`
+
+> Adds a link to the database to be shortened.
 
 Body Parameters:
 
@@ -23,7 +25,9 @@ Sample Return value:
 }
 ```
 
-`GET /urls/`
+`GET /v1/urls/`
+
+> Displays all of the URLS in the database.
 
 Sample return value:
 
@@ -37,6 +41,22 @@ Sample return value:
       "date": "2020-08-13T16:27:14.344Z"
     }
   ]
+}
+```
+
+`POST /v1/clear`
+
+> Clears all of the data.
+
+Headers:
+`Authorization` (required)
+
+Sample return value:
+
+```json
+{
+  "success": true,
+  "data": "Cleared Database Entries."
 }
 ```
 

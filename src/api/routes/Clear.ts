@@ -4,7 +4,7 @@ import { secret } from "../../config";
 
 export class Clear {
   public constructor(app: Application) {
-    app.get("/v1/clear", async (req, res) => {
+    app.post("/v1/clear", async (req, res) => {
       if (
         !req.headers ||
         !req.headers.authorization ||
@@ -18,6 +18,10 @@ export class Clear {
           .status(403);
 
       await Links.deleteMany({});
+
+      logger.info(
+        `Database was cleared - ${new Date(Date.now()).toLocaleString()}`
+      );
 
       return res
         .send({ success: true, data: "Cleared Database Entries." })
